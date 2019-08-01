@@ -37,5 +37,5 @@ subplot(2,2,4); image(coloursNorm); ylabel('Pre Neuron');
 xlabel('Post Neuron'); title('Excitatory Connections')
 sgtitle('Rate Coding - Normal Amplitudes')
 
-% saveas(figure(1),'RateCodingNetworkSmall.png')
-% saveas(figure(2),'RateCodingNetworkNorm.png')
+saveas(figure(1),'RateCodingNetworkSmall.png')
+saveas(figure(2),'RateCodingNetworkNorm.png')

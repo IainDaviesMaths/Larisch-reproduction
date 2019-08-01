@@ -10,9 +10,9 @@ wSmall = PlotInputExConnections(w_input_rec_small);
 
 figure(1)
 subplot(2,2,1); imagesc(winpSmall); ylabel('Input Neuron'); 
-xlabel('Time(s)'); title('Feedforward Connections to Neuron 1')
+xlabel('Time(s)'); title('Feedforward Connections\nto Neuron 1')
 subplot(2,2,2); imagesc(wexSmall); ylabel('Excitatory Neuron'); 
-xlabel('Time(s)'); title('Excitatory Connections to Neuron 1')
+xlabel('Time(s)'); title('Excitatory Connections\nto Neuron 1')
 subplot(2,2,3); imagesc(wSmall); ylabel('Input Neuron'); 
 xlabel('Excitatory Neuron'); title('Feedforward Connections')
 subplot(2,2,4); image(coloursSmall); ylabel('Pre Neuron'); 
@@ -28,14 +28,14 @@ wNorm = PlotInputExConnections(w_input_rec_norm);
 
 figure(2)
 subplot(2,2,1); imagesc(winpNorm); ylabel('Input Neuron'); 
-xlabel('Time(s)'); title('Feedforward Connections to Neuron 1')
+xlabel('Time(s)'); title('Feedforward Connections\nto Neuron 1')
 subplot(2,2,2); imagesc(wexNorm); ylabel('Excitatory Neuron'); 
-xlabel('Time(s)'); title('Excitatory Connections to Neuron 1')
+xlabel('Time(s)'); title('Excitatory Connections\nto Neuron 1')
 subplot(2,2,3); imagesc(wNorm); ylabel('Input Neuron'); 
 xlabel('Excitatory Neuron'); title('Feedforward Connections')
 subplot(2,2,4); image(coloursNorm); ylabel('Pre Neuron'); 
 xlabel('Post Neuron'); title('Excitatory Connections')
 sgtitle('Temporal Coding - Normal Amplitudes')
 
-% saveas(figure(1),'TempCodingNetworkSmall.png')
-% saveas(figure(2),'TemporalCodingNetworkNorm.png')
+saveas(figure(1),'TemporalCodingNetworkSmall.png')
+saveas(figure(2),'TemporalCodingNetworkNorm.png')
